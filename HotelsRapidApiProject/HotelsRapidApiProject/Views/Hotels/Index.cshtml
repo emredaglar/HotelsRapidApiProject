@@ -4,16 +4,7 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_UILayout.cshtml";
 }
-<style>
-    .ri-text h4 {
-        height: 50px; /* Otel adının kaplayacağı maksimum alan */
-        overflow: hidden; /* Fazlalık içeriğin taşmasını engeller */
-        text-overflow: ellipsis; /* Uzun yazılar için üç nokta (...) koyar */
-        white-space: nowrap; /* Metnin alt satıra geçmesini engeller */
-    }
 
-
-</style>
 
 <div class="breadcrumb-section">
     <div class="container">
@@ -78,10 +69,10 @@
                                         </tr>
                                 </tbody>
                             </table>
-                            <form method="post" asp-action="HotelRoomDetail">
-                                <input type="hidden" name="hotel_id" value="@item.hotel_id" />
-                                <input type="hidden" name="arrival_date" value="@item.property.checkinDate" />
-                                <input type="hidden" name="departure_date" value="@item.property.checkoutDate" />
+                            <form method="post" asp-action="GetHotelDetails">
+                                <input type="hidden" name="hotelId" value="@item.hotel_id" />
+                                <input type="hidden" name="dateIn" value="@item.property.checkinDate" />
+                                <input type="hidden" name="dateOut" value="@item.property.checkoutDate" />
                                 <button class="btn primary-btn"> Detaylar</button>
                             </form>
                         </div>
@@ -93,3 +84,12 @@
     </div>
 </section>
 
+<style>
+    .ri-text h4 {
+        height: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+</style>

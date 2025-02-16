@@ -85,8 +85,5 @@ namespace HotelsRapidApiProject.Controllers
             }
         }
 
-
-
-
     }
 }
