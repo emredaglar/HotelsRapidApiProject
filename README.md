@@ -33,3 +33,8 @@ Elde edilen şehir ID’si ve diğer filtreleme kriterleri kullanılarak otel li
 - API’den gelen JSON verileri, özel ViewModel yapıları ile yönetildi ve uygun modeller aracılığıyla işlendi.
 
 ## Proje Çıktıları
+
+![1](https://github.com/user-attachments/assets/8140ab0f-e7a0-4c0c-87b1-e8320c41a0fe)
+![4](https://github.com/user-attachments/assets/ea4d5d0b-b1f5-4384-bf2a-ebd9afc8f55a)
+![5](https://github.com/user-attachments/assets/a61e7cef-e2f1-4f2e-8947-d42dfe35c1bd)
+
